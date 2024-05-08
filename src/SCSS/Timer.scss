@@ -1,0 +1,38 @@
+section{
+  margin-top: 10px;
+  font-size: .9rem;
+  width: 100%;
+  display: grid;
+  gap: 10px;
+  place-items: center;
+
+  .timerBtns{
+    display: flex;
+    gap: 1rem;
+    >button{
+      cursor: pointer;
+    }
+
+    .activated{
+      background: rgb(248, 188, 110)
+    }
+
+    & button:hover{
+
+      animation: squish 200ms ease-in-out;
+    }
+
+  > *{
+    padding: 0.4rem 0.8rem;
+    border: 1px solid #c5c5c5;
+    border-radius: 8px;
+  }
+
+  }
+}
+
+@keyframes squish {
+  50%{
+    scale: 0.8 1.2;
+  }
+}
